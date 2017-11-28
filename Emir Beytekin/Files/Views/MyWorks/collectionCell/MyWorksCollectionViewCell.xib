@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="MyWorksCollectionViewCell" id="gTV-IL-0wX" customClass="MyWorksCollectionViewCell" customModule="Emir_Beytekin" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mR5-JH-fxC">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                    </imageView>
+                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ADS-r7-xcf">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ADS-r7-xcf" secondAttribute="trailing" id="88s-LR-zjM"/>
+                <constraint firstAttribute="bottom" secondItem="mR5-JH-fxC" secondAttribute="bottom" id="Cm4-KV-XVY"/>
+                <constraint firstItem="mR5-JH-fxC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="DDh-km-R2K"/>
+                <constraint firstItem="ADS-r7-xcf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gZE-w2-YN2"/>
+                <constraint firstAttribute="bottom" secondItem="ADS-r7-xcf" secondAttribute="bottom" id="hTs-NH-xhY"/>
+                <constraint firstAttribute="trailing" secondItem="mR5-JH-fxC" secondAttribute="trailing" id="rPS-hO-hvx"/>
+                <constraint firstItem="ADS-r7-xcf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="tzb-XK-6LG"/>
+                <constraint firstItem="mR5-JH-fxC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="xbh-3V-5v6"/>
+            </constraints>
+            <connections>
+                <outlet property="backView" destination="ADS-r7-xcf" id="oCt-Dh-7GD"/>
+                <outlet property="worksImage" destination="mR5-JH-fxC" id="hmP-HN-acE"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

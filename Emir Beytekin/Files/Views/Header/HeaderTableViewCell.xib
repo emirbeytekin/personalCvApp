@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" rowHeight="80" id="KGk-i7-Jjw" customClass="HeaderTableViewCell" customModule="Emir_Beytekin" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tempAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="qmr-2x-uzH">
+                        <rect key="frame" x="11" y="-2" width="83" height="83.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="83" id="BFa-qq-XxA"/>
+                            <constraint firstAttribute="width" constant="83" id="pBq-9u-o5K"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="aa" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hC-iv-0mK" customClass="GlitchLabel" customModule="Emir_Beytekin" customModuleProvider="target">
+                        <rect key="frame" x="111" y="8.5" width="31.5" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="ZX6-Nb-hiu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                        <color key="textColor" red="0.99216449259999995" green="0.99214601520000001" blue="0.99215853210000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="glitchEnabled" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="drawScanline" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Developer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGW-md-ZIU">
+                        <rect key="frame" x="111" y="44.5" width="110" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.58431372549019611" green="0.59607843137254901" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="wGW-md-ZIU" firstAttribute="top" secondItem="6hC-iv-0mK" secondAttribute="bottom" constant="2" id="EXo-HL-nog"/>
+                    <constraint firstItem="qmr-2x-uzH" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="RB2-fV-CnG"/>
+                    <constraint firstItem="6hC-iv-0mK" firstAttribute="top" secondItem="qmr-2x-uzH" secondAttribute="top" constant="10" id="Swm-Zo-S0E"/>
+                    <constraint firstItem="wGW-md-ZIU" firstAttribute="leading" secondItem="6hC-iv-0mK" secondAttribute="leading" id="VTH-OJ-nbV"/>
+                    <constraint firstItem="6hC-iv-0mK" firstAttribute="leading" secondItem="qmr-2x-uzH" secondAttribute="trailing" constant="17" id="lbl-Pp-PQh"/>
+                    <constraint firstItem="qmr-2x-uzH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="11" id="qpy-7c-eL4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="userAvatar" destination="qmr-2x-uzH" id="ZME-8e-YJc"/>
+                <outlet property="userName" destination="6hC-iv-0mK" id="ALO-8y-zTr"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="68"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="tempAvatar" width="101" height="101"/>
+    </resources>
+</document>
